@@ -5,11 +5,11 @@ addons:
   sonarcloud:
     organization: "rocketeer55-github"
     token:
-      secure: "0839fe0c1d2e01ebce78dec394eccf96537158f7"
+      secure: "577875fc758ad8a83b0ddf2568ad3338abd5adc3"
 jdk:
   - oraclejdk9
 script:
-  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=rocketeer55-github -Dsonar.login=0839fe0c1d2e01ebce78dec394eccf96537158f7 -Dsonar.branch=master
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
 cache:
   directories:
     - '$HOME/.m2/repository'
